@@ -1,0 +1,1 @@
+SELECT `quiz_id`, `quiz_title`, `quiz_category` FROM `rsc_quiz` WHERE `quiz_author` = :_uid

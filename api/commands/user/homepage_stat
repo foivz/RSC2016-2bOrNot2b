@@ -1,0 +1,13 @@
+SELECT  (
+        SELECT COUNT(*)
+        FROM `rsc_user`
+        ) AS 'user_count',
+        (
+        SELECT COUNT(*)
+        FROM `rsc_quiz`
+        ) AS 'quiz_count',
+		(
+		SELECT COUNT(*)
+		FROM `rsc_category`
+		) AS 'category_count'
+FROM    dual

@@ -1,0 +1,19 @@
+[
+	{
+		"level": 0,
+		"rank": "Guest",
+		"default": true,
+		"commands": [
+			"guest"
+		]
+	},
+	{
+		"level": 1,
+		"rank": "User",
+		"default": false,
+		"commands": [
+			"user",
+			"guest"
+		]
+	}
+]

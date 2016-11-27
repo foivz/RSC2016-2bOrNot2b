@@ -1,0 +1,12 @@
+INSERT INTO `rsc_question`(
+	`question_text`, 
+	`question_quiz`, 
+	`question_after`,
+	`question_author`
+) 
+VALUES (
+	:qtext,
+	:quiz,
+	:after,
+	:_uid
+)

@@ -1,0 +1,3 @@
+UPDATE `rsc_quiz` SET 
+`quiz_title`=:qname,
+WHERE `quiz_id` = :qid

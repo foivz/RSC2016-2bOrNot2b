@@ -1,0 +1,20 @@
+INSERT INTO `rsc_events`(
+	`event_name`,
+	`event_description`,
+	`event_host`,
+	`event_public`,
+	`event_quiz`,
+	`event_teams`,
+	`event_type`,
+	`event_date`
+) 
+VALUES (
+	:etitle,
+	:description,
+	:_uid,
+	:publicevent,
+	:qselect,
+	:teamevent,
+	:eventtype,
+	:edate
+)

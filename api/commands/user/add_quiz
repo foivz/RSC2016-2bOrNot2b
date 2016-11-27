@@ -1,0 +1,2 @@
+INSERT INTO `rsc_quiz` (`quiz_title`, `quiz_author`, `quiz_category`, `quiz_date`) 
+		VALUES (:qtitle, :_uid, :category, :date)
