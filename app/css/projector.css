@@ -1,0 +1,16 @@
+* { 
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #2a4f6e;
+}
+
+#particles {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}

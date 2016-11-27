@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<title>Title</title>
+	  
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<link rel="stylesheet" href="../../css/skeleton.css">
+		<link rel="stylesheet" href="../../css/projector.css">
+
+	  
+		<script src="../../js/jquery.js" type="text/javascript"></script>
+		<script src="../../js/jquery.fullpage.min.js" type="text/javascript"></script>
+
+	</head>
+	<body>
+		<div id="particles" data-command="get_self_info">
+			<span data-var="user_name"></span>
+			&nbsp;
+		</div>
+		<div id="fullpage">
+			<div class="section container" id="intro">
+				<div class="row">
+					<h1>Quiz title<h1>
+				</div>
+				<div class="row">
+					<div class="eight columns">
+						<h3>Players<h3>
+					</div>
+					<div class="four columns">
+						<h3>Moderators</h3>
+					</div>
+				</div>
+			</div>
+			<div class="section container">
+				<div class="row" id="question">
+					<h1>Who invented the first airplane?</h1>
+				</div>
+				
+				<div class="row" id="answers">
+					<div class="six columns">
+					
+					</div>
+					<div class="six columns">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../../js/api.js" type="text/javascript"></script>
+		<script src="../../js/particles.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage();
+				
+            
+				$('#particles').particleground({
+					minSpeedX: 0.1,
+					maxSpeedX: 0.7,
+					minSpeedY: 0.1,
+					maxSpeedY: 0.7,
+					directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+					directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
+					density: 10000, // How many particles will be generated: one particle every n pixels
+					dotColor: '#496C89',
+					lineColor: '#496C89',
+					particleRadius: 7, // Dot size
+					lineWidth: 1,
+					curvedLines: true,
+					proximity: 100, // How close two dots need to be before they join
+					parallax: false
+				});
+			});
+		</script>
+	</body>
+</html>
